@@ -14,42 +14,42 @@ body{
   border-radius: 25%;
   width: 146px;
   height: 146px;
-  max-width: 100%;
-  max-height: 100%;
-  margin-left: 20px;
-}
+  top:3px;
+  }
 
-
-#titulo{
-  position: absolute;
-  height: 100px;
-  width: 150px;
-  left:2%;
-}
 
 #intro{
 text-align: center;
-left: 50%;
 font-size: 20px;
 }
 
+#bienvenida{
+  text-align: center;
+  margin-left: 10%;
+  font-size: 20px;
+  }
 
-#selection{
-  background-color:rgb(96, 96, 236);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+#calculation{
+  margin-top:30px;
+  margin-left: 2px;
+  font-size:17px;
+  background-color:#6ea4e4;
   color: white;
   font-family: Verdana, sans-serif;
+  text-align: center;
+  }
+#selection{
+  background-color:#6ea4e4;
+  display: flex;
+  justify-content: center;
+  color: white;
   align-items: center;
-  margin-top: 45px;
-  height: 40px;
-  font-style: italic;
+  margin-top: 40px;
+  height: 10px;
 }
 
 
 #results {
-   
     margin: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -89,7 +89,7 @@ font-size: 20px;
       
 /* lado de adelante */
 .flip-card-front {
- background-color: rgb(162, 162, 233);
+ background-color: #6ea4e4;
  width: 150px;
  height: 200px;
  margin: 15px;
@@ -98,7 +98,7 @@ font-size: 20px;
       
 /* lado de atras */
 .flip-card-back {
- background-color: rgb(90, 90, 226);
+ background-color: #1d6cc9;
  width: 150px;
  height: 200px;
  margin: 15px;
@@ -109,7 +109,7 @@ font-size: 20px;
 
  footer{
   font-family:  'Arial Narrow', Arial, sans-serif;
-  background-color:rgb(96, 96, 236);
+  background-color:#1d6cc9;
   color: white;
   text-align: center;
   text-align-last: center;
@@ -125,16 +125,26 @@ font-size: 20px;
     width:100%;
     margin: 0px;
 }
-#intro{
-   width: 70%;
-margin-left:20%;
+#homeButton{
+  width:100px;
+  height:100px;
 }
-#titulo{
-  margin: 0px; 
+#intro{
+margin-left:12%;
+}
+#bienvenida{
+  text-align:center;
+  position: absolute;
+  margin-left:10px;
+  
+  top:103px;
 }
 #selection{
-  height: 80px;
+  height: 60px;
   
+}
+#calculation{
+  margin-top:70px;
 }
 }
 
@@ -147,13 +157,24 @@ margin-left:20%;
 #intro{
   text-align: center;
   width: 100%;
-  margin-left: 5%
+  margin-left: 50px;;
+  margin-top:7%
+}
+#bienvenida{
+  display:none;
+}
+#homeButton{
+width:80px;
+height:80px;
+margin-left: 0%;
+margin-top:6%;
 }
 header{
   width: 90%;
 }
-#titulo{
-  display:none;
+}
+#calculation{
+  margin-top:20px;
 }
 #selection{
   margin:2px;
@@ -165,4 +186,4 @@ header{
 footer{
   height: 40px;
 }
-}
+

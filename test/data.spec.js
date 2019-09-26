@@ -100,6 +100,32 @@ describe('filterByType', () => {
   });
 })
 
+describe('filterByWeakness', () => {
+  const muestra =[
+    {
+     "name":"Bulbasaur",
+     "weaknesses":"Fire"
+    },
+    {
+    "name":"Charizard",
+    "weaknesses":"Water"
+    },
+    {
+    "name":"Meowth",
+    "weaknesses":"Fighting"
+    }
+  ]
+  it('debería ser una función', () => {
+    assert.equal(typeof filterByWeakness, 'function');
+  });
+
+  
+
+  it('debería retornar "Meoth" al filtrar por debilidad "Fighting"', () => {
+    assert.deepEqual(window.filterByWeakness(muestra,"Fighting"),[{"name":"Meowth","weaknesses":"Fighting"}] );
+  });
+})
+
 describe('filterByEgg', () => {
   const muestra =[
     {

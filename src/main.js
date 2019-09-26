@@ -32,7 +32,7 @@ pokemonCards +=
 showCardsComplete.innerHTML= pokemonCards;
 count = count +1;
 let percentaje= (count/151)*100;
-let calculate = "         Esta selección corresponde a un "+percentaje.toFixed(0)+ "% de los Pokemon de la región Kanto"
+let calculate = "Esta selección corresponde a un "+percentaje.toFixed(0)+ "% de los Pokemon de la región Kanto"
 showPercentajes.innerHTML= calculate;
 
 }))
