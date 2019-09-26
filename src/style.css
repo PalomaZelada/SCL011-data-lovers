@@ -1,9 +1,22 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     background-image: url("https://image.freepik.com/vector-gratis/fondo-cielo-rayos-sol_1048-2215.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#homeButton{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkKCFAzXhe-oUjfoj0UxgYi1fByJMS4Jai-mGbXilSMGjOetP_");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25%;
+  width: 146px;
+  height: 146px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 20px;
 }
 
 
@@ -16,7 +29,8 @@ body{
 
 #intro{
 text-align: center;
-  left: 50%;
+left: 50%;
+font-size: 20px;
 }
 
 
@@ -28,8 +42,8 @@ text-align: center;
   color: white;
   font-family: Verdana, sans-serif;
   align-items: center;
-  margin: 20px;
-  height: 30px;
+  margin-top: 45px;
+  height: 40px;
   font-style: italic;
 }
 

@@ -21,9 +21,9 @@ pokemonCards +=
      <h4>${element.name}</h4>
  </div>
    <div class="flip-card-back">
-
+         <h2>${element.name}</h2>
          <h5>Spawn: ${((element.spawn_chance)*100).toFixed(0)}%</h5>
-         <h5>Debilidad: ${element.weaknesses}</h5>
+         <h5>Horario de Spawn: ${element.spawn_time}</h5>
          <h5>Caramelos para evolución: ${element.candy_count}</h5>
    </div>
  </div>
@@ -48,14 +48,19 @@ abcSelect.addEventListener('change',()=>{
   pokemonCards(resultAbc);
 })
 
-
 const typeSelect= document.getElementById("filterType");
 typeSelect.addEventListener('change', ()=>{
   const valorType= typeSelect.value;
   let resultType= window.filterByType(allPokemonOnData, valorType);
   pokemonCards(resultType);
 })
-window.typeSelect= typeSelect
+
+const weaknessSelect= document.getElementById("filterWeak");
+weaknessSelect.addEventListener('change', ()=>{
+  const valorWeak= weaknessSelect.value;
+  let resultWeak= window.filterByWeakness(allPokemonOnData, valorWeak);
+  pokemonCards(resultWeak);
+})
 
 const eggSelect= document.getElementById("filterEgg");
 eggSelect.addEventListener('change', ()=>{
@@ -64,3 +69,7 @@ eggSelect.addEventListener('change', ()=>{
   pokemonCards(resultEgg);
 })
 
+const reloadPage= document.getElementById("homeButton");
+reloadPage.addEventListener('click', ()=>{
+  location.reload()
+} )
