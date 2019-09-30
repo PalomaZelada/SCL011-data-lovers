@@ -73,3 +73,9 @@ const reloadPage= document.getElementById("homeButton");
 reloadPage.addEventListener('click', ()=>{
   location.reload()
 } )
+
+const welcomePage=document.getElementById("nextPage");
+welcomePage.addEventListener('click',()=>{
+  document.getElementById("firstPage").style.display="none";
+  document.getElementsById("secondPage").style.display="block";
+});
