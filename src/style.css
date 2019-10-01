@@ -146,38 +146,50 @@ font-size: 20px;
 
 /* Para tablets */
 @media only screen and (min-width: 641px) and (max-width: 1007px){
-  #firstPage{
-    display:none;
-  }
+  iframe{
+    margin-left:120px;
+width: 510px;
+height: 265px;  }
+
     #results{
     width:100%;
     margin: 0px;
 }
 #homeButton{
-  width:100px;
-  height:100px;
+  width:80px;
+  height:80px;
 }
 #intro{
 align-content:center;
 }
+#nextPage{
+  margin-left:340px;
+  margin-top:-5px;
+}
 #bienvenida{
-  text-align:center;
-  margin-left:10px;
-  margin-top:65px;
+  text-align:justify;
+  margin-left:120px;
+  margin-top:-3px;
+  height: 150px;
+  width:510px;
+  
 }
 #selection{
   height: 60px;
-  margin-top:110px;
+  margin-top:130px;
   
 }
 #calculation{
-  margin-top:110px;
+  margin-top:130px;
 }
 }
 
 /*Para celular*/
 @media only screen and (min-width: 350px) and (max-width:640px){
   iframe{
+    display: none;
+  }
+  #firstPage{
     display: none;
   }
     #results{
@@ -187,7 +199,7 @@ align-content:center;
 #intro{
   text-align: center;
   width: 100%;
-  font-size:18px;
+  font-size:16px;
   margin-left: 58px;
   margin-top:7%
 }
