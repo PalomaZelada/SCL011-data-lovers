@@ -197,11 +197,9 @@ align-content:center;
       width:100%;
 }
 #intro{
-  text-align: center;
-  width: 100%;
-  font-size:16px;
-  margin-left: 58px;
-  margin-top:7%
+ align-content:justify;
+ font-size:17px;
+ margin-left:100px;
 }
 #bienvenida{
   display:none;
@@ -209,8 +207,7 @@ align-content:center;
 #homeButton{
 width:80px;
 height:80px;
-margin-left: 0%;
-margin-top:6%;
+
 }
 header{
   width: 90%;
